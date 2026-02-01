@@ -1,7 +1,7 @@
 # hangman in  python
 import random
 
-words = ("apple", "orange", "banana", "strawberry", "cherry")
+from words_module_hangman import words
 
 # dictionary of key: ()
 
