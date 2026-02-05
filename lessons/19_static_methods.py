@@ -13,15 +13,16 @@ Static methods = Best for utility functions that do not need access to class dat
 
 class Employee:
 
-    # object from class
+    # constructor (__init__)
     def __init__(self, name, position):
         self.name = name
         self.position = position
 
-    # instance method
+    # instance method (get_info)
     def get_info(self):
         return f"{self.name} = {self.position}"
 
+    # static method (is_valid_position)
     @staticmethod
     def is_valid_position(position):
         valid_positions = ["Manager", "Cashier", "Cook", "Janitor"]
